@@ -1,0 +1,54 @@
+nav.accordian {
+    background: #808080;
+    border-right: 2px solid black;
+    color: white;
+    position: absolute;
+    width: 224px;
+    min-height: 100%;
+    margin: none;
+    padding: none;
+    list-style: none; }
+nav.accordian ol,
+nav.accordian ul {
+    display: none;
+    list-style: none; 
+    margin: 0px;
+    padding: 0px;
+}
+nav.accordian [aria-expanded="true"] > ol,
+nav.accordian [aria-expanded="true"] > ul {
+    display: block; }
+
+nav.accordian header,
+nav.accordian label {
+    cursor: pointer;
+    display: flex;
+    height: 20px;
+    padding: 4px; }
+nav.accordian header:hover,
+nav.accordian label:hover {
+    text-decoration: underline; }
+
+nav.accordian > li > header {
+    background-color: #404040;
+    border-bottom: 2px solid black; }
+nav.accordian > li > header:hover {
+    background-color: #606060; }
+nav.accordian > li[aria-expanded="true"] > header {
+    background-color: #505050; }
+nav.accordian > li[aria-expanded="true"] > header:hover {
+    background-color: #707070; }
+
+nav.accordian li > ul > li {
+    margin-left: 12px; }
+
+nav.accordian header > img {
+    content: url("/icons/arrow_right_x32.png");
+    padding: 4px; }
+nav.accordian label > img {
+    content: url("/icons/circle_x32.png");
+    padding: 7px;
+}
+
+nav.accordian [aria-expanded="true"] > header > img {
+    content: url("/icons/arrow_down_x32.png") }

@@ -1,0 +1,35 @@
+form.searchbox
+{
+    font-family: Arial;
+    display: flex;
+}
+form.searchbox input
+{
+    background: #F0F0F0;
+    border: 1px solid grey;
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+    width: 80%;
+}
+form.searchbox button
+{
+    background: #2090FF;
+    border: 1px solid gray;
+    border-left: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: auto;
+    width: 20%;
+}
+form.searchbox button:hover
+{
+    background: #0880E0;
+}
+form.searchbox::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
