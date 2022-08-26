@@ -10,7 +10,7 @@ header.header
     height: 48px;
 }
 
-header.header label
+header.header > label
 {
     margin: auto 8px;
     font-size: 24px;
