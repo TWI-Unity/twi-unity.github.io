@@ -2,6 +2,7 @@ var iframe = null;
 
 function set(location)
 {
+    if (!location.hash) location.hash = "#installation";
     if (iframe != null) iframe.src = location.protocol + '//' + location.host + location.pathname + location.hash.substring(1);
 
     var element = document.querySelector("a[href='" + location.hash + "']");
