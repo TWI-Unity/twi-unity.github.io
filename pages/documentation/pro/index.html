@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <head>
 	<title>TWI Lite Unity Documentation</title> 
-	<link rel="stylesheet" href="/styles/header/header.css">
-	<link rel="stylesheet" href="/styles/nav/accordian.css">
-	<script src="/scripts/navigation.js"></script>
-	<style>
-		body {
-			background-color: white; 
-			margin: 0px; }
-		iframe {
-			border: none;
-			margin-left: 224px;
-			min-height: calc(100% - 48px);
-			min-width: calc(100% - 224px);
-			position: absolute;
-		}
-	</style>
+	<link rel="stylesheet" href="/styles/documentation.css"/>
+	<script src="/scripts/documentation/navigation.js"></script>
 </head>
 <html>
 	<body>
@@ -37,46 +24,48 @@
 				<button>&#x1F50D;</button>
 			</form>
 		</header>
-		<nav class="accordian">
-			<details>
-				<summary>
-					<a href="#installation">Installation</a>
-				</summary>
+		<main>
+			<nav class="navigation">
 				<details>
 					<summary>
-						<a href="#installation/2018">Unity 2018+</a>
+						<a href="#installation">Installation</a>
 					</summary>
-					<a href="#installation/2018/local">Local Package</a>
-					<a href="#installation/2018/unity">Unity Package</a>
 					<details>
 						<summary>
-							<a href="#installation/2018/custom">Custom (2018 Only)</a>
+							<a href="#installation/2018">Unity 2018+</a>
 						</summary>
-						<a href="#installation/2018/custom/git">Git Package</a>
+						<a href="#installation/2018/local">Local Package</a>
+						<a href="#installation/2018/unity">Unity Package</a>
+						<details>
+							<summary>
+								<a href="#installation/2018/custom">Custom (2018 Only)</a>
+							</summary>
+							<a href="#installation/2018/custom/git">Git Package</a>
+						</details>
+					</details>
+					<details>
+						<summary>
+							<a href="#installation/2019">Unity 2019+</a>
+						</summary>
+						<a href="#installation/2019/git">Git Package</a>
+						<a href="#installation/2019/tgz">Tarball Package</a>
 					</details>
 				</details>
 				<details>
 					<summary>
-						<a href="#installation/2019">Unity 2019+</a>
+						<a href="#features">Features</a>
 					</summary>
-					<a href="#installation/2019/git">Git Package</a>
-					<a href="#installation/2019/tgz">Tarball Package</a>
+					<details>
+						<summary>
+							<a href="#features/mia">MIA Editor</a>
+						</summary>
+						<a href="#features/mia/change">Change EXT</a>
+						<a href="#features/mia/create">Create File</a>
+						<a href="#features/mia/open">Open With</a>
+					</details>
 				</details>
-			</details>
-			<details>
-				<summary>
-					<a href="#features">Features</a>
-				</summary>
-				<details>
-					<summary>
-						<a href="#features/mia">MIA Editor</a>
-					</summary>
-					<a href="#features/mia/change">Change EXT</a>
-					<a href="#features/mia/create">Create File</a>
-					<a href="#features/mia/open">Open With</a>
-				</details>
-			</details>
-		</nav>
-		<iframe/>
+			</nav>
+			<iframe/>		
+		</main>
 	</body>
 </html>
