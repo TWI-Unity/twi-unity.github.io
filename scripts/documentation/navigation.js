@@ -1,9 +1,10 @@
 var session = new Date().getTime();
 var iframe = null;
 
-function set(location, )
+function set(location)
 {
     if (!location.hash) location.hash = "#installation";
+    if (location.pathname.endsWith(".html")) location.pathname = location.pathname.substring(0, location.pathname.lastIndexOf('/'));
     if (iframe != null) iframe.src = location.protocol + '//' + location.host + location.pathname + location.hash.substring(1) + "?session=" + session;
 
     var element = document.querySelector("a[href='" + location.hash + "']");

@@ -1,0 +1,46 @@
+@import "searchbox.css";
+
+header.header
+{
+    background-color: #303030;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    padding: 8px;
+    height: 48px;
+}
+header.header a:link,
+header.header a:visited,
+header.header a:active,
+header.header a:hover {
+    all: unset;
+    cursor: pointer;
+}
+header.header label
+{
+    color: white;
+    font-size: 24px;
+    font-family: Arial; 
+    margin: auto 8px;
+}
+
+header.header > img[name=logo] {
+    content: url("/logos/twi_x64.png"); }
+
+header.header > label[name=tabs] {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 0px;
+    order: 0;
+    transform: translateY(calc(50% - 0.5em)); }
+header.header > label[name=tabs] > a:hover {
+    color: cyan; }
+header.header > label[name=tabs] > a[checked=true] {
+    color: cyan;
+    text-decoration: underline; }
+
+header.header > a[name=donate] {
+    margin: 2px 12px;
+    order: 1; }
+header.header > form[name=search] {
+    order: 2; }

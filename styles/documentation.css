@@ -1,0 +1,15 @@
+@import "documentation/header.css";
+@import "documentation/navigation.css";
+
+body {
+    background-color: white;
+    height: 100%;
+    margin: 0px;
+    position: absolute;
+    width: 100%; }
+main {
+    display: flex;
+    height: calc(100% - 48px); }
+main > iframe {
+    border: 0px;
+    width: 100%; }

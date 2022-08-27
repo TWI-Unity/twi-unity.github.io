@@ -1,86 +1,71 @@
 <!DOCTYPE html>
 <head>
 	<title>TWI Lite Unity Documentation</title> 
-	<link rel="stylesheet" href="/styles/header/header.css">
-	<link rel="stylesheet" href="/styles/nav/accordian.css">
-	<script src="/scripts/navigation.js"></script>
-	<style>
-		body {
-			background-color: white; 
-			margin: 0px; }
-		iframe {
-			border: none;
-			margin-left: 224px;
-			min-height: calc(100% - 48px);
-			min-width: calc(100% - 224px);
-			position: absolute;
-		}
-	</style>
+	<link rel="stylesheet" href="/styles/documentation.css"/>
+	<script src="/scripts/documentation/navigation.js"></script>
 </head>
 <html>
 	<body>
 		<header class="header">
-			<img src="/logos/twi_x64.png"/>
-			<label>
+			<img name="logo"/>
+			<label name="title">
 				<span style="font-weight: bold;">TWI Lite</span>
 				<span style="font-weight: normal;">Unity Documentation</span>
-			   </label>
-			<label style="margin-left: auto; margin-right: 32px; font-size: 16px;">
-				<span style="color: aqua; text-decoration: underline;">Lite</span>
-				<span style="text-decoration: none;">Pro</span>
 			</label>
-			<form id="donate" action="https://www.paypal.com/donate" method="post" target="_top">
-				<input type="hidden" name="business" value="39ZNCLCP872MA" />
-				<input type="hidden" name="no_recurring" value="0" />
-				<input type="hidden" name="currency_code" value="CAD" />
-				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-				<img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
-			</form>		
-			<form class="searchbox">
+			<label name="tabs">
+				<a href="../lite" checked="true">Lite</a>
+				<a href="../pro">Pro</a>
+			</label>
+			<a name="donate" href="https://www.paypal.com/donate/?business=39ZNCLCP872MA&no_recurring=0&currency_code=CAD" title="PayPal - The safer, easier way to pay online!">
+				<img src="/images/buttons/donate.png"/>
+			</a>
+			<form class="searchbox" name="search">
 				<input placeholder="Search...">
-				  <button>&#x1F50D;</button>
+				<button>&#x1F50D;</button>
 			</form>
 		</header>
-		<nav class="accordian">
-			<details>
-				<summary>
-					<a href="#installation">Installation</a>
-				</summary>
+		<main>
+			<nav class="navigation">
 				<details>
 					<summary>
-						<a href="#installation/2018">Unity 2018+</a>
+						<a href="#installation">Installation</a>
 					</summary>
-					<a href="#installation/2018/local">Local Package</a>
-					<a href="#installation/2018/unity">Unity Package</a>
 					<details>
 						<summary>
-							<a href="#installation/2018/custom">Custom (2018 Only)</a>
+							<a href="#installation/2018">Unity 2018+</a>
 						</summary>
-						<a href="#installation/2018/custom/git">Git Package</a>
+						<a href="#installation/2018/local">Local Package</a>
+						<a href="#installation/2018/unity">Unity Package</a>
+						<details>
+							<summary>
+								<a href="#installation/2018/custom">Custom (2018 Only)</a>
+							</summary>
+							<a href="#installation/2018/custom/git">Git Package</a>
+						</details>
+					</details>
+					<details>
+						<summary>
+							<a href="#installation/2019">Unity 2019+</a>
+						</summary>
+						<a href="#installation/2019/git">Git Package</a>
+						<a href="#installation/2019/tgz">Tarball Package</a>
 					</details>
 				</details>
 				<details>
 					<summary>
-						<a href="#installation/2019">Unity 2019+</a>
+						<a href="#features">Features</a>
 					</summary>
-					<a href="#installation/2019/git">Git Package</a>
-					<a href="#installation/2019/tgz">Tarball Package</a>
+					<details>
+						<summary>
+							<a href="#features/mia">MIA Editor</a>
+						</summary>
+						<a href="#features/mia/change">Change EXT</a>
+						<a href="#features/mia/create">Create File</a>
+						<a href="#features/mia/open">Open With</a>
+					</details>
 				</details>
-			</details>
-			<details>
-				<summary>
-					<a href="#features">Features</a>
-				</summary>
-				<details>
-					<summary>
-						<a href="#features/mia">MIA Editor</a>
-					</summary>
-					<a href="#features/mia/change">Change EXT</a>
-					<a href="#features/mia/create">Create File</a>
-					<a href="#features/mia/open">Open With</a>
-				</details>
-			</details>
-		</nav>
-		<iframe/>
+			</nav>
+			<iframe/>		
+		</main>
 	</body>
 </html>
